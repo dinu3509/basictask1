@@ -1,0 +1,52 @@
+
+1) pandas is used for data manipulation and analysis.
+2) CountVectorizer is used to convert text data into a matrix of token counts.
+3) MultinomialNB is a Naive Bayes classifier for multinomially distributed data.
+4) make_pipeline: Used to streamline the process of creating a machine learning pipeline.
+5) random is used for random selection of tasks.
+6) vectorizer converts task descriptions into a matrix of token counts.
+7) clf is a Naive Bayes classifier.
+8) model is a pipeline that combines the vectorizer and the classifier.
+
+#WORKING OF CODE
+
+1) Imports and Initialization:
+*Import necessary libraries for data handling, machine learning, and random selection.
+*Initialize an empty DataFrame for tasks.
+*Load tasks from a CSV file if available.
+
+
+2)Save Tasks:
+*Define a function to save the current state of tasks to a CSV file.
+
+
+3) Add Task:
+*Define a function to add a new task.
+*If priority is not provided, use the model to predict it.
+*Update the tasks DataFrame, save it, and retrain the model.
+
+
+4)Remove Task:
+*Define a function to remove a task based on its description.
+*Update the tasks DataFrame, save it, and retrain the model.
+
+
+5)List Tasks:
+*Define a function to list all tasks.
+*Print the tasks if available, otherwise notify the user that no tasks are available.
+
+
+6)Recommend Task:
+*Define a function to recommend a task.
+*Predict priorities for tasks, and recommend a high-priority task first, then medium, and finally low priority.
+*Notify the user if no tasks are available for recommendation.
+
+
+7) Main Menu:
+*Provide a menu for the user to add, remove, list, recommend tasks, or exit the application.
+*Execute the appropriate function based on user input.
+
+
+8)Train Classifier:
+*Create a machine learning pipeline using CountVectorizer and MultinomialNB.
+*Train the model only if there are existing tasks.
