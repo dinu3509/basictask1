@@ -50,3 +50,8 @@
 8)Train Classifier:
 *Create a machine learning pipeline using CountVectorizer and MultinomialNB.
 *Train the model only if there are existing tasks.
+
+THE CHALLENGES I FACED DURING ORGANIZING THIS CODE:
+* The given reference code only recommends the high priority task. Whenever there is no high priority task left in the list, 
+  it doesn't recommend any task of medium and low priority tasks which makes us think there are no tasks left. 
+  I solved this by applying order of priority High--->Medium--->Low using lists in python.
